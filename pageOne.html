@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Let's Learn Chinese</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- English font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Chinese font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="banner">
+      <a href="index.html"><h1 class="logo">Let's Learn Chinese</h1></a>
+      <div class="pageOne-text">
+        <div class="textSection">
+          <h1>
+            1 | What is your name?<br />
+            你叫什么名字？
+          </h1>
+          <audio controls>
+            <source src="audio\1 what is your name.mp3" type="audio/mp3" />
+            Your browser does not support the audio element.
+          </audio>
+
+          <div class="textButtons">
+            <button class="EngPin" onclick="hideEngPin()">
+              Show PinYin and translation
+            </button>
+            <!-- <button class="EngPin" onclick="showMenu()">Listen to audio</button> -->
+          </div>
+
+          <div id="conversation">
+            <div class="personA">
+              <p>你好。</p>
+              <p class="pinYin">Nǐ hǎo.</p>
+              <p class="eng">Hello.</p>
+            </div>
+            <div class="personB">
+              <p>您好。</p>
+              <p class="pinYin">Nínhǎo.</p>
+              <p class="eng">Hello.</p>
+            </div>
+            <div class="personA">
+              <p>你叫什么名字？</p>
+              <p class="pinYin">Nǐ jìao shénme míngzi?</p>
+              <p class="eng">What is your name?</p>
+            </div>
+            <div class="personB">
+              <p>我叫朱虹。你叫什么名字？</p>
+              <p class="pinYin">Wǒ jìao Zhū Hóng. Nǐ jìao shénme míngzi?</p>
+              <p class="eng">I’m called Zhu Hong. What is your name?</p>
+            </div>
+            <div class="personA">
+              <p>我叫刘明。</p>
+              <p class="pinYin">Wǒ jìao Líu Míng.</p>
+              <p class="eng">I’m called Liu Ming.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="table">
+          <h2>New words</h2>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Word</th>
+                <th>PinYin</th>
+                <th>Translation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>你</td>
+                <td>nǐ</td>
+                <td>you</td>
+              </tr>
+              <tr>
+                <td>好</td>
+                <td>hǎo</td>
+                <td>good</td>
+              </tr>
+              <tr>
+                <td>你好</td>
+                <td>nǐ hǎo</td>
+                <td>hello</td>
+              </tr>
+              <tr>
+                <td>您</td>
+                <td>nín</td>
+                <td>you (polite)</td>
+              </tr>
+              <tr>
+                <td>您好</td>
+                <td>nínhǎo</td>
+                <td>hello (polite)</td>
+              </tr>
+              <tr>
+                <td>叫</td>
+                <td>jiào</td>
+                <td>called, named</td>
+              </tr>
+              <tr>
+                <td>什么</td>
+                <td>shénme</td>
+                <td>what</td>
+              </tr>
+              <tr>
+                <td>名字</td>
+                <td>míngzi</td>
+                <td>name</td>
+              </tr>
+              <tr>
+                <td>我</td>
+                <td>wǒ</td>
+                <td>I</td>
+              </tr>
+              <tr>
+                <td>朱虹</td>
+                <td>zhū hóng</td>
+                <td>a female name</td>
+              </tr>
+              <tr>
+                <td>刘明</td>
+                <td>líu míng</td>
+                <td>a male name</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="testTableSection">
+          <h2>Test your knowledge</h2>
+          <p id="hoverExp">hover cursor over table to show answers</p>
+          <table class="testTable">
+            <tbody>
+              <tr>
+                <td>你好</td>
+                <td>
+                  <div class="answer">Nǐ hǎo.<br />Hello.</div>
+                </td>
+              </tr>
+              <tr>
+                <td>您好</td>
+                <td>
+                  <div class="answer">Nínhǎo.<br />Hello (polite).</div>
+                </td>
+              </tr>
+              <tr>
+                <td>你叫什么名字？</td>
+                <td>
+                  <div class="answer">
+                    Nǐ jìao shénme míngzi?<br />What is your name?
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>我叫......</td>
+                <td>
+                  <div class="answer">Wǒ jìao...<br />I’m called...</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <div id="sideNav">
+      <nav>
+        <button class="nav-close" id="closeButton" onclick="hideMenu()">
+          Close
+        </button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pageOne.html">1 | What is your name?</a></li>
+          <!-- <li><a href="#">link 3</a></li> -->
+          <!-- <li><a href="#">link 4</a></li> -->
+          <!-- <li><a href="#">link 5</a></li> -->
+        </ul>
+      </nav>
+    </div>
+    <button class="nav-open" id="openbutton" onclick="showMenu()">Menu</button>
+
+    <script>
+      // var convo = document.getElementById("conversation");
+      var elements = document.getElementsByClassName("pinYin");
+      var elementsEng = document.getElementsByClassName("eng");
+
+      // set original value
+      for (var x = 0; x < elements.length; x++) {
+        elements[x].style.opacity = "0";
+      }
+
+      for (var x = 0; x < elements.length; x++) {
+        elementsEng[x].style.opacity = "0";
+      }
+
+      //show and hide side menu functions
+      function showMenu() {
+        sideNav.style.right = "0";
+        openbutton.style.opacity = "0";
+      }
+
+      function hideMenu() {
+        sideNav.style.right = "-250px";
+        openbutton.style.opacity = "1";
+      }
+
+      // change pinyin and english to visible and invisible
+      function hideEngPin() {
+        for (var x = 0; x < elements.length; x++) {
+          if (elements[x].style.opacity == "0") {
+            elements[x].style.opacity = "1";
+          } else {
+            elements[x].style.opacity = "0";
+          }
+        }
+
+        for (var x = 0; x < elementsEng.length; x++) {
+          if (elementsEng[x].style.opacity == "0") {
+            elementsEng[x].style.opacity = "1";
+          } else {
+            elementsEng[x].style.opacity = "0";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
