@@ -270,7 +270,7 @@ td {
   /* page one  */
   .pageOne-text .textSection {
     padding: 10px;
-    margin: 0 5%;
+    margin: 5vh 5%;
     height: 95vh;
   }
 
@@ -313,7 +313,14 @@ td {
 
   td {
     font-size: 16px;
+    padding: 2% 2%;
   }
+
+  /* td {
+    font-size: 20px;
+    background-color: #eed6d641;
+    padding: 5px 20px;
+  } */
 
   /* test table  */
 
