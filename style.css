@@ -246,7 +246,7 @@ td {
   visibility: hidden;
 }
 
-.testTable td:hover > .answer {
+.testTable td:hover > .answer, .testTable td:active > .answer {
   visibility: visible;
 }
 
