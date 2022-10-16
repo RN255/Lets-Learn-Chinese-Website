@@ -142,33 +142,39 @@
 
         <div id="testTableSection">
           <h2>Test your knowledge</h2>
-          <p id="hoverExp">hover over or tap to show answer</p>
+          <p id="hoverExp">click or tap to reveal and hide answer</p>
           <table class="testTable">
+            <thead>
+              <tr>
+                <th>Phrase</th>
+                <th>Answer</th>
+              </tr>
+            </thead>
             <tbody>
               <tr>
                 <td>你好</td>
-                <td>
-                  <div class="answer">Nǐ hǎo.<br />Hello.</div>
+                <td id="answerBoxOne">
+                  <div id="answerOne" class="answer">Nǐ hǎo.<br />Hello.</div>
                 </td>
               </tr>
               <tr>
                 <td>您好</td>
-                <td>
-                  <div class="answer">Nínhǎo.<br />Hello (polite).</div>
+                <td id="answerBoxTwo">
+                  <div id="answerTwo" class="answer">Nínhǎo.<br />Hello (polite).</div>
                 </td>
               </tr>
               <tr>
                 <td>你叫什么名字？</td>
-                <td>
-                  <div class="answer">
+                <td id="answerBoxThree">
+                  <div id="answerThree" class="answer">
                     Nǐ jìao shénme míngzi?<br />What is your name?
                   </div>
                 </td>
               </tr>
               <tr>
                 <td>我叫......</td>
-                <td>
-                  <div class="answer">Wǒ jìao...<br />I’m called...</div>
+                <td id="answerBoxFour">
+                  <div id="answerFour" class="answer">Wǒ jìao...<br />I’m called...</div>
                 </td>
               </tr>
             </tbody>
@@ -203,7 +209,7 @@
         elements[x].style.opacity = "0";
       }
 
-      for (var x = 0; x < elements.length; x++) {
+      for (var x = 0; x < elementsEng.length; x++) {
         elementsEng[x].style.opacity = "0";
       }
 
@@ -236,6 +242,43 @@
           }
         }
       }
+
+      // change test table if on mobile
+      // set original values
+      document.getElementById("answerOne").style.visibility = "hidden";
+      document.getElementById("answerTwo").style.visibility = "hidden";
+      document.getElementById("answerThree").style.visibility = "hidden";
+      document.getElementById("answerFour").style.visibility = "hidden";
+
+      // change answer to visible and hidden
+      document.getElementById("answerBoxOne").onclick = function() {
+        if (document.getElementById("answerOne").style.visibility == "hidden")
+        document.getElementById("answerOne").style.visibility = "visible";
+        else {document.getElementById("answerOne").style.visibility = "hidden";
+        }
+      }
+
+      document.getElementById("answerBoxTwo").onclick = function() {
+        if (document.getElementById("answerTwo").style.visibility == "hidden")
+        document.getElementById("answerTwo").style.visibility = "visible";
+        else {document.getElementById("answerTwo").style.visibility = "hidden";
+        }
+      }
+
+      document.getElementById("answerBoxThree").onclick = function() {
+        if (document.getElementById("answerThree").style.visibility == "hidden")
+        document.getElementById("answerThree").style.visibility = "visible";
+        else {document.getElementById("answerThree").style.visibility = "hidden";
+        }
+      }
+
+      document.getElementById("answerBoxFour").onclick = function() {
+        if (document.getElementById("answerFour").style.visibility == "hidden")
+        document.getElementById("answerFour").style.visibility = "visible";
+        else {document.getElementById("answerFour").style.visibility = "hidden";
+        }
+      }
+  
     </script>
   </body>
 </html>
