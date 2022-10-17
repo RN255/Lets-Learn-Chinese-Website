@@ -18,9 +18,18 @@ body {
   height: 100vh;
 }
 
+#bannerTwo {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url(images/background.JPG);
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+}
+
+
 .logo {
   position: absolute;
-  top: 2%;
+  top: 20px;
   left: 5%;
   font-size: 35px;
   color: white;
@@ -120,10 +129,11 @@ nav ul li a {
 }
 
 /* page one text */
+
 .pageOne-text {
   text-align: center;
   color: white;
-  padding-top: 10%;
+  padding-top: 100px;
 }
 
 .pageOne-text h1 {
@@ -134,9 +144,9 @@ nav ul li a {
 
 .pageOne-text p {
   font-size: 20px;
-  padding: 3px 0;
-  margin-left: 15%;
-  margin-right: 15%;
+  padding: 5px 0;
+  /* margin-left: 15%; */
+  /* margin-right: 15%; */
   line-height: 1;
 }
 
@@ -165,22 +175,28 @@ nav ul li a {
   color: #e284f5;
   font-size: 18px;
   line-height: 1;
-  opacity: 0;
+  display: none;
 }
 
 .pageOne-text .eng {
   color: #f08411;
   font-size: 18px;
   line-height: 1;
-  opacity: 0;
+  display: none;
 }
 
-.personA p {
+.personA {
   text-align: left;
+  background-color:  #eed6d641;
+  border-radius: 5px;
+  padding: 5px;
+  /* width: 80%;
+  margin: auto; */
 }
 
-.personB p {
-  text-align: right;
+.personB {
+  text-align: left;
+  padding: 5px;
 }
 
 /* page one buttons  */
@@ -202,7 +218,7 @@ nav ul li a {
 
 /* table */
 .table {
-  margin-top: 40px;
+  margin-top: 100px;
 }
 
 table {
@@ -231,7 +247,7 @@ td {
 
 /* test table  */
 #testTableSection {
-  padding: 75px;
+  padding-bottom: 75px;
 }
 
 #hoverExp {
@@ -250,9 +266,13 @@ td {
   /* main page */
   .logo {
     font-size: 20px;
-    top: 3%;
+    top: 25px;
   }
 
+  #bannerTwo {
+    height: 75px;
+  }
+  
   .banner-text h1 {
     font-size: 45px;
   }
@@ -270,8 +290,7 @@ td {
   /* page one  */
   .pageOne-text .textSection {
     padding: 10px;
-    margin: 5vh 5%;
-    height: 95vh;
+    margin: 0;
   }
 
   .pageOne-text h1 {
@@ -290,25 +309,26 @@ td {
     color: #e284f5;
     font-size: 16px;
     /* line-height: normal; */
-    opacity: 0;
+    display: none;
   }
 
   .pageOne-text .eng {
     color: #f08411;
     font-size: 16px;
     /* line-height: normal; */
-    opacity: 0;
+    display: none;
   }
 
   /* table */
 
   .table {
-    margin-top: 20px;
+    margin-top: 100px;
   }
 
   table {
-    width: 90vw;
+    width: 100%;
     margin-top: 20px;
+    padding: 0 10px;
   }
 
   td {
@@ -325,7 +345,7 @@ td {
   /* test table  */
 
   #testTableSection {
-    padding: 25px;
+    padding: 0 0 175px;
   }
 
   #hoverExp {

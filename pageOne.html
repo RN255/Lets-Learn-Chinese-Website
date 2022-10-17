@@ -20,7 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <section id="banner">
+    <section id="bannerTwo">
       <a href="index.html"><h1 class="logo">Let's Learn Chinese</h1></a>
       <div class="pageOne-text">
         <div class="textSection">
@@ -206,11 +206,12 @@
 
       // set original value
       for (var x = 0; x < elements.length; x++) {
-        elements[x].style.opacity = "0";
+        elements[x].style.display = "none";
       }
+      
 
       for (var x = 0; x < elementsEng.length; x++) {
-        elementsEng[x].style.opacity = "0";
+        elementsEng[x].style.display = "none";
       }
 
       //show and hide side menu functions
@@ -227,18 +228,18 @@
       // change pinyin and english to visible and invisible
       function hideEngPin() {
         for (var x = 0; x < elements.length; x++) {
-          if (elements[x].style.opacity == "0") {
-            elements[x].style.opacity = "1";
+          if (elements[x].style.display == "none") {
+            elements[x].style.display = "block";
           } else {
-            elements[x].style.opacity = "0";
+            elements[x].style.display = "none";
           }
         }
 
         for (var x = 0; x < elementsEng.length; x++) {
-          if (elementsEng[x].style.opacity == "0") {
-            elementsEng[x].style.opacity = "1";
+          if (elementsEng[x].style.display == "none") {
+            elementsEng[x].style.display = "block";
           } else {
-            elementsEng[x].style.opacity = "0";
+            elementsEng[x].style.display = "none";
           }
         }
       }
