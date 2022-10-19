@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Let's Learn Chinese</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- English font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Chinese font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  
+  <body>
+    <section id="bannerTwo">
+      <a href="index.html"><h1 class="logo">Let's Learn Chinese</h1></a>
+      <div class="pageOne-text">
+        <div class="textSection">
+          <h1>
+            1 | What is your name?<br />
+            你叫什么名字？
+          </h1>
+          <audio controls>
+            <source src="audio\2 are you chinese.wav" type="audio/mp3" />
+            Your browser does not support the audio element.
+          </audio>
+
+          <div class="textButtons">
+            <button class="EngPin" onclick="hideEngPin()">
+              Show PinYin and translation
+            </button>
+            <!-- <button class="EngPin" onclick="showMenu()">Listen to audio</button> -->
+          </div>
+
+          <div id="conversation">
+            <div class="personA">
+              <p class="chinese">您贵姓？</p>
+              <p class="pinYin">Nín guìxìng? </p>
+              <p class="eng">What is your surname?</p>
+            </div>
+            <div class="personB">
+              <p class="chinese">我姓朱。</p>
+              <p class="pinYin">Wǒ xìng zhū.</p>
+              <p class="eng">My surname is Zhu.</p>
+            </div>
+            <div class="personA">
+              <p class="chinese">你是中国人吗?</p>
+              <p class="pinYin">Nǐ shì zhōngguórén ma?</p>
+              <p class="eng">Are you Chinese?</p>
+            </div>
+            <div class="personB">
+              <p class="chinese">是的，我是中国人。你是美国人吗？</p>
+              <p class="pinYin">Shìde. Wǒ shì zhōngguórén. Nǐ shì měiguórén ma?</p>
+              <p class="eng">Yes. I am Chinese. Are you American?</p>
+            </div>
+            <div class="personA">
+              <p class="chinese">是的，我是美国人。</p>
+              <p class="pinYin">Shìde. Wǒ shì měiguórén. </p>
+              <p class="eng">Yes. I am American</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="table">
+          <h2>New words</h2>
+
+          <table>
+            <thead>
+              <tr>
+                <th id="wordCol">Word</th>
+                <th id="pinCol">PinYin</th>
+                <th>Translation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>贵</td>
+                <td>guì</td>
+                <td>expensive, honorable</td>
+              </tr>
+              <tr>
+                <td>姓</td>
+                <td>xìng</td>
+                <td>surname</td>
+              </tr>
+              <tr>
+                <td>贵姓</td>
+                <td>guìxìng</td>
+                <td>surname (polite)</td>
+              </tr>
+              <tr>
+                <td>是</td>
+                <td>shì</td>
+                <td>is, be, am</td>
+              </tr>
+              <tr>
+                <td>国</td>
+                <td>guó</td>
+                <td>country, nation</td>
+              </tr>
+              <tr>
+                <td>中国</td>
+                <td>zhōngguó</td>
+                <td>China</td>
+              </tr>
+              <tr>
+                <td>人</td>
+                <td>rén</td>
+                <td>person</td>
+              </tr>
+              <tr>
+                <td>中国人</td>
+                <td>zhōngguórén</td>
+                <td>Chinese</td>
+              </tr>
+              <tr>
+                <td>吗</td>
+                <td>ma</td>
+                <td>(used at the end of a question)</td>
+              </tr>
+              <tr>
+                <td>是的</td>
+                <td>shìde</td>
+                <td>yes</td>
+              </tr>
+              <tr>
+                <td>美</td>
+                <td>měi</td>
+                <td>beautiful</td>
+              </tr>
+              <tr>
+                <td>美国</td>
+                <td>měiguó</td>
+                <td>USA</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="testTableSection">
+          <h2>Test your knowledge</h2>
+          <p id="hoverExp">click or tap to reveal and hide answer</p>
+          <table class="testTable">
+            <thead>
+              <tr>
+                <th>Phrase</th>
+                <th>Answer</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>您贵姓？</td>
+                <td id="answerBoxOne">
+                  <div id="answerOne" class="answer">Nín guìxìng?<br />What is your surname?</div>
+                </td>
+              </tr>
+              <tr>
+                <td>我姓......</td>
+                <td id="answerBoxTwo">
+                  <div id="answerTwo" class="answer">Wǒ xìng…<br />My surname is…</div>
+                </td>
+              </tr>
+              <tr>
+                <td>你是中国人吗？</td>
+                <td id="answerBoxThree">
+                  <div id="answerThree" class="answer">
+                    Nǐ shì zhōngguórén ma?<br />Are you Chinese?
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>是的。</td>
+                <td id="answerBoxFour">
+                  <div id="answerFour" class="answer">Shìde.<br />Yes.</div>
+                </td>
+              </tr>
+              <tr>
+                <td>我是中国人。</td>
+                <td id="answerBoxFive">
+                  <div id="answerFive" class="answer">Wǒ shì zhōngguórén.<br />I am Chinese.</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <div id="sideNav">
+      <nav>
+        <button class="nav-close" id="closeButton" onclick="hideMenu()">
+          Close
+        </button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pageOne.html">1 | What is your name?</a></li>
+          <li><a href="pageTwo.html">2 | Are you Chinese?</a></li>
+          <!-- <li><a href="#">link 3</a></li> -->
+          <!-- <li><a href="#">link 4</a></li> -->
+          <!-- <li><a href="#">link 5</a></li> -->
+        </ul>
+      </nav>
+    </div>
+    <button class="nav-open" id="openbutton" onclick="showMenu()">Menu</button>
+
+    <script>
+      // var convo = document.getElementById("conversation");
+      var elements = document.getElementsByClassName("pinYin");
+      var elementsEng = document.getElementsByClassName("eng");
+
+      // set original value
+      for (var x = 0; x < elements.length; x++) {
+        elements[x].style.display = "none";
+      }
+      
+
+      for (var x = 0; x < elementsEng.length; x++) {
+        elementsEng[x].style.display = "none";
+      }
+
+      //show and hide side menu functions
+      function showMenu() {
+        sideNav.style.right = "0";
+        openbutton.style.opacity = "0";
+      }
+
+      function hideMenu() {
+        sideNav.style.right = "-250px";
+        openbutton.style.opacity = "1";
+      }
+
+      // change pinyin and english to visible and invisible
+      function hideEngPin() {
+        for (var x = 0; x < elements.length; x++) {
+          if (elements[x].style.display == "none") {
+            elements[x].style.display = "block";
+          } else {
+            elements[x].style.display = "none";
+          }
+        }
+
+        for (var x = 0; x < elementsEng.length; x++) {
+          if (elementsEng[x].style.display == "none") {
+            elementsEng[x].style.display = "block";
+          } else {
+            elementsEng[x].style.display = "none";
+          }
+        }
+      }
+
+      // change test table if on mobile
+      // set original values
+      document.getElementById("answerOne").style.visibility = "hidden";
+      document.getElementById("answerTwo").style.visibility = "hidden";
+      document.getElementById("answerThree").style.visibility = "hidden";
+      document.getElementById("answerFour").style.visibility = "hidden";
+      document.getElementById("answerFive").style.visibility = "hidden";
+
+      // change answer to visible and hidden
+      document.getElementById("answerBoxOne").onclick = function() {
+        if (document.getElementById("answerOne").style.visibility == "hidden")
+        document.getElementById("answerOne").style.visibility = "visible";
+        else {document.getElementById("answerOne").style.visibility = "hidden";
+        }
+      }
+
+      document.getElementById("answerBoxTwo").onclick = function() {
+        if (document.getElementById("answerTwo").style.visibility == "hidden")
+        document.getElementById("answerTwo").style.visibility = "visible";
+        else {document.getElementById("answerTwo").style.visibility = "hidden";
+        }
+      }
+
+      document.getElementById("answerBoxThree").onclick = function() {
+        if (document.getElementById("answerThree").style.visibility == "hidden")
+        document.getElementById("answerThree").style.visibility = "visible";
+        else {document.getElementById("answerThree").style.visibility = "hidden";
+        }
+      }
+
+      document.getElementById("answerBoxFour").onclick = function() {
+        if (document.getElementById("answerFour").style.visibility == "hidden")
+        document.getElementById("answerFour").style.visibility = "visible";
+        else {document.getElementById("answerFour").style.visibility = "hidden";
+        }
+      }
+
+      document.getElementById("answerBoxFive").onclick = function() {
+        if (document.getElementById("answerFive").style.visibility == "hidden")
+        document.getElementById("answerFive").style.visibility = "visible";
+        else {document.getElementById("answerFive").style.visibility = "hidden";
+        }
+      }
+  
+    </script>
+  </body>
+</html>
