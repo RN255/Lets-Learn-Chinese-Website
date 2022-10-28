@@ -26,7 +26,6 @@ body {
   height: 100px;
 }
 
-
 .logo {
   position: absolute;
   top: 20px;
@@ -187,7 +186,7 @@ nav ul li a {
 
 .personA {
   text-align: left;
-  background-color:  #eed6d641;
+  background-color: #eed6d641;
   border-radius: 5px;
   padding: 5px;
   /* width: 80%;
@@ -261,7 +260,7 @@ td {
 }
 
 .testTable {
-  width: 50%;
+  width: 75%;
 }
 
 .testTable td .answer {
@@ -278,7 +277,7 @@ td {
   #bannerTwo {
     height: 75px;
   }
-  
+
   .banner-text h1 {
     font-size: 45px;
   }
@@ -331,7 +330,7 @@ td {
     margin-top: 100px;
   }
 
-  #pinCol{
+  #pinCol {
     column-width: 175px;
   }
 
