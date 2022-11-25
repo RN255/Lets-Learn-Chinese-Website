@@ -34,7 +34,7 @@ I am trying to further my skills as a developer so I built this site. I used to 
 Website is live at: https://rn255.github.io/Lets-Learn-Chinese-Website/
 
 ## Screenshot
-![This is an image](https://github.com/RN255/portfolio-site/blob/main/images/learnChineseScreenshot.jpg)
+![Let's Learn Chinese screenshot](https://github.com/RN255/Lets-Learn-Chinese-Website/blob/main/images/learnChineseScreenshot.jpg)
 
 
 
