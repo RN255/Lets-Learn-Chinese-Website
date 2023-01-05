@@ -2,6 +2,12 @@
 ## Project Name: Let's Learn Chinese
 A website for learning basic Chinese. Users can listen to audio and follow along with the text. A translation and pronunciation guide can be revealed by clicking on a button. A 'test your knowledge' section at the bottom allows users to test their knowledge and then click or tap to reveal the answer. There are currently lessons for five different topics.
 
+## How to use
+Website is live at: https://rn255.github.io/Lets-Learn-Chinese-Website/
+
+## Screenshot
+![Let's Learn Chinese screenshot](https://github.com/RN255/Lets-Learn-Chinese-Website/blob/main/images/learnChineseScreenshot.jpg)
+
 ## Motivation
 I am trying to further my skills as a developer so I built this site. I used to live in China so I am familiar with the topic. I tried to design a website that I would have found useful when I was learning Chinese.
 
@@ -29,13 +35,3 @@ I am trying to further my skills as a developer so I built this site. I used to 
 - there is currently no footer section
 - more lessons could be added
 - I could consult other language learning websites for features this website lacks
-
-## How to use
-Website is live at: https://rn255.github.io/Lets-Learn-Chinese-Website/
-
-## Screenshot
-![Let's Learn Chinese screenshot](https://github.com/RN255/Lets-Learn-Chinese-Website/blob/main/images/learnChineseScreenshot.jpg)
-
-
-
-
